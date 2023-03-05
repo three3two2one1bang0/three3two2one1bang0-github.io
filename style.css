@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Shantell+Sans:wght@500&display=swap");
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+.bg {
+  width: 100%;
+  height: 100%;
+  background-image: url(https://images.pexels.com/photos/4066041/pexels-photo-4066041.jpeg?auto=compress&cs=tinysrgb&w=1600);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.logo {
+  position: relative;
+  top: 3%;
+  font-size: 3rem;
+  display: inline-block;
+  left: 50%;
+  transform: translate(-50%);
+  position: fixed;
+  margin: 0;
+  bottom: 4.5%;
+  text-align: center;
+
+  color: white;
+}
+
+.devide {
+  position: absolute;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.clockto {
+  position: absolute;
+  margin: 0;
+  top: 16%;
+  right: 29%;
+
+  color: white;
+  font-size: 2rem;
+}
+
+.clockfrom {
+  position: absolute;
+  margin: 0;
+  top: 16%;
+  left: 28.5%;
+
+  color: white;
+  font-size: 2rem;
+}
+
+.from {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-size: 2rem;
+  z-index: 1;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.to {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-size: 2rem;
+  margin-top: 10px;
+  text-align: center;
+}
+.glassfrom {
+  position: relative;
+
+  width: 500px;
+  height: 600px;
+  margin-right: 50px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.5)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.27);
+}
+
+.glassto {
+  position: relative;
+
+  width: 500px;
+  height: 600px;
+
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.5)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.27);
+}
+
+.hahaha {
+  left: 50%;
+  transform: translate(-50%);
+  position: fixed;
+  margin: 0;
+  bottom: 4.5%;
+  text-align: center;
+  font-size: 1.3rem;
+  color: white;
+  font-family: sans-serif;
+}
+.refreshbtn {
+  position: fixed;
+  bottom: 4.5%;
+  right: 5%;
+  border: none;
+  border-radius: 30px;
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  background: rgba(15, 143, 143, 0.76);
+  background: linear-gradient(
+    0deg,
+    rgba(15, 143, 143, 0.76) 0%,
+    rgba(15, 143, 143, 0.76) 100%
+  );
+  opacity: 1;
+  color: #fff;
+  overflow: hidden;
+  transition: 1.2s;
+}
+
+.refreshbtn:hover {
+  text-decoration: none;
+
+  background: rgb(251, 33, 117);
+}
+
+.refreshbtn:before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  top: -180px;
+  left: 0;
+  width: 30px;
+  height: 100%;
+  background-color: #fff;
+  animation: shiny-randombtn 3s ease-in-out infinite;
+}
+
+.refreshbtn:active {
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.3),
+    -4px -4px 6px 0 rgba(116, 125, 136, 0.2),
+    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+.randombtn {
+  position: fixed;
+  bottom: 4.5%;
+  left: 5%;
+  border: none;
+  border-radius: 30px;
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  background: rgb(251, 33, 117);
+  background: linear-gradient(
+    0deg,
+    rgba(251, 33, 117, 1) 0%,
+    rgba(234, 76, 137, 1) 100%
+  );
+  opacity: 1;
+  color: #fff;
+  overflow: hidden;
+  transition: 1.2s;
+}
+/* color: #19c7d9; */
+
+.randombtn:hover {
+  text-decoration: none;
+
+  background: rgba(15, 143, 143, 0.76);
+}
+
+.randombtn:before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  top: -180px;
+  left: 0;
+  width: 30px;
+  height: 100%;
+  background-color: #fff;
+  animation: shiny-randombtn 3s ease-in-out infinite;
+}
+
+.randombtn:active {
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.3),
+    -4px -4px 6px 0 rgba(116, 125, 136, 0.2),
+    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+@-webkit-keyframes shiny-randombtn {
+  0% {
+    -webkit-transform: scale(0) rotate(45deg);
+    opacity: 0;
+  }
+  80% {
+    -webkit-transform: scale(0) rotate(45deg);
+    opacity: 0.5;
+  }
+  81% {
+    -webkit-transform: scale(4) rotate(45deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(50) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+#weather {
+  position: relative;
+  text-align: center;
+  top: 10%;
+  color: white;
+}
+
+#todo-formfrom {
+  padding-left: 50px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+#todo-formfrom input {
+  border: 0;
+  border-radius: 10px;
+  outline: none;
+  padding-left: 10px;
+  background-color: rgb(233, 233, 233);
+  width: 400px;
+  height: 30px;
+  text-align: left;
+}
+
+#todo-formto {
+  padding-left: 50px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+#todo-formto input {
+  border: 0;
+  border-radius: 10px;
+  outline: none;
+  padding-left: 10px;
+  background-color: rgb(233, 233, 233);
+  width: 400px;
+  height: 30px;
+  text-align: left;
+}
+
+ul {
+  list-style: none;
+  margin-right: 100px;
+}
+
+ul button {
+  cursor: pointer;
+  margin-left: 20px;
+  border: none;
+  float: right;
+}
+
+ul li {
+  margin-top: 30px;
+  margin-left: 20px;
+  font-family: "Shantell Sans", "Gamja Flower", cursive;
+  font-weight: bold;
+  font-size: 20px;
+  width: 390px;
+  border-bottom: 0.5px solid black;
+}
+
+.modallogin {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 8;
+  background-image: url(https://cdn.bhdw.net/im/black-wall-wooden-door-wallpaper-79579_w635.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+#login-form div {
+  position: absolute;
+  display: inline-block;
+  width: 300px;
+
+  top: 37.5%;
+  left: 46.5%;
+}
+
+#login-form input {
+  position: inherit;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  text-align: center;
+  background-color: white;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.hahaha span{
+  text-transform: capitalize;
+}
